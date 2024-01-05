@@ -19,21 +19,29 @@ This project is a personal portfolio website designed for a junior-level Front-E
 ### Getting Started
 
 1. **Clone the Repository**
-   git clone [repository_url]
+```bash
+git clone [repository_url]
+```
 
-2. **Navigate to the Project Directory**
-   cd [project_directory]
+3. **Navigate to the Project Directory**
+```bash
+cd [project_directory]
+```
 
-3. **Install Dependencies**
-   npm install
+4. **Install Dependencies**
+```bash
+npm install
+```
 
 ### Running the Project
 
 1. **Start the Development Server**
-   npm start
-   This will launch the project in your default web browser.
+```bash
+npm start
+```
+This will launch the project in your default web browser.
 
-2. **Accessing the Website**
+3. **Accessing the Website**
 
 - By default, the site will be hosted at `http://localhost:3000`.
 
