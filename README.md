@@ -120,7 +120,7 @@ Create a personal portfolio website that showcases your skills and projects. The
 ## Deliverables
 - Source code for HTML, CSS, and JavaScript files.
 - A README file documenting the project and how to run it.
-- Deploy the website on a free hosting platform like GitHub Pages or Netlify and provide the link.
+- (Optional) Deploy the website on a free hosting platform like GitHub Pages or Netlify and provide the link.
 
 ## Evaluation Criteria
 - Code quality and clarity.
