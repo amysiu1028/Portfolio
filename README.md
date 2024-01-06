@@ -79,13 +79,13 @@ npm install
 
 1. **Start the Development Server**
 ```bash
-npm start
+npm run dev
 ```
 This will launch the project in your default web browser.
 
 3. **Accessing the Website**
 
-- By default, the site will be hosted at `http://localhost:3000`.
+- The site can be reached at `http://localhost:5175`.
 
 ### Making Modifications
 
