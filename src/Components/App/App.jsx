@@ -1,10 +1,14 @@
 import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+import React from 'react';
 import './App.css'
-import '../../../index.css'
-import Header from '../Header/Header'
-import Projects from '../Projects/Projects'
+import Header from '../Header/Header.jsx'
+import Intro from '../Intro/Intro.jsx';
+import Projects from '../Projects/Projects.jsx'
+
+//create contact and link 
+
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -14,22 +18,21 @@ function App() {
       <div>
         <Header/>
       </div>
+      <div>
+        <Intro/>
+      </div>
       <main>
-        <section id="projects">
-              <h2>Projects</h2>
-              <Projects/>
-              {/* <!-- Projects will be loaded here --> */}
+          <section>
+              <Projects/> 
           </section>
 
           <section id="testimonials">
               <h2>Testimonials</h2>
-              {/* <!-- Testimonials will be loaded here --> */}
           </section>
 
           <section id="contact">
               <h2>Contact Me</h2>
               <form id="contactForm">
-                  {/* <!-- Contact form will go here --> */}
               </form>
           </section>
       </main>

@@ -23,11 +23,14 @@ a:hover {
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  /* min-width: 320px; */
+  min-width: 100vw;
   min-height: 100vh;
+  /* height: 100%; */
 }
 
 h1 {
@@ -46,6 +49,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
@@ -65,4 +69,19 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.header-nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-size {
+  width: 200px; /* Use 100% width to make sure it respects the parent's size */
+  height: 150px; /* Adjust as needed */
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
 }

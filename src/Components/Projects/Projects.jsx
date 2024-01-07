@@ -1,42 +1,167 @@
 // import React from 'react'
-import '../../../index.css'
-import { image1, image2, image3, image4, image5 } from '../../images'
-//to import images in react, I have to install @vitejs/plugin-react and @vitejs/plugin-react-images plugins: npm install @vitejs/plugin-react @vitejs/plugin-react-images --save-dev
+import '../../index.css'
+import { useState } from 'react'
+// import { image1, image2, image3, image4, image5 } from '../../assets/aerobites'
+import { useEffect } from 'react'
+import { image1, image2, image3, image4, image5, image6, image7, image8, image9 } from './index.jsx';
 
 function Projects() {
   const [ currentImageIndex, setCurrentImageIndex ] = useState(0)
-  const aerobitesImages = [ image1, image2, image3, image4, image5 ]
 
+  const aerobites = [image1, image2, image3]
+  const rancidtomatillos = [image4, image5, image6]
+  const ventures = [image7, image8, image9]
+
+ 
   useEffect(() => {
-    //set interval
+    handleImageArray(aerobites)
+    console.log("aerobites",aerobites)
+    handleImageArray(rancidtomatillos)
+    handleImageArray(ventures)
+  }, [aerobites, rancidtomatillos, ventures, currentImageIndex])
+  
+  function handleImageArray(imageArray) {
     const intervalId = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => prevIndex === (aerobitesImages.images.length - 1) ? 0 : prevIndex + 1)
+      setCurrentImageIndex((prevIndex) => (prevIndex === imageArray.length - 1) ? 0: prevIndex + 1)
     }, 3000)
-    //clearInterval() function is a built-in JavaScript function that clears a timer set with the setInterval() function. It stops the interval specified by the interval ID, which is returned by setInterval()
+    //clearInterval() function is a built-in JavaScript function that clears a timer set with the setInterval() function. It stops the interval specified by the interval ID,
     return () => clearInterval(intervalId);
-  }, [aerobitesImages, currentImageIndex])
+  }
+
+  function displayImageArrays(imageArray) {
+    const displayImages = imageArray.map((image,index) => {
+      return (
+        <li key={index}
+        style={{display: index === currentImageIndex ? 'block' : 'none'}}
+        >
+          <img className='image-size'
+          src={image}
+          alt='Aerobites application'
+          ></img>
+        </li>
+      )
+    })
+    return displayImages
+  }
   
-  const displayAerobites = aerobitesImages.map((image,index => {
-    return (
-      <li key={index}
-      style={{display: index === currentIndex ? 'block' : 'none'}}
-      >
-        <img
-        src={image}
-        alt='Aerobites application'
-        ></img>
-      </li>
-    )
-  }))
-  
+  const displayAerobites = displayImageArrays(aerobites)
+  const displayRancid = displayImageArrays(rancidtomatillos)
+  const displayVenture = displayImageArrays(ventures)
+
+  console.log("displayAerobites",displayAerobites)
   return (
     <div>
       <h2>Projects</h2>
-      <section>
+      <section className="projects-container">
         <section className='aerobites-project'>{displayAerobites}</section>
+        <section className='rancid-project'>{displayRancid}</section>
+        <section className='rancid-project'>{displayVenture}</section>
       </section>
     </div>
   )
 }
 
 export default Projects
+
+
+// // import React from 'react'
+// import '../../index.css'
+// import { useState } from 'react'
+// // import { image1, image2, image3, image4, image5 } from '../../assets/aerobites'
+// import { useEffect } from 'react'
+// import { image1, image2, image3, image4, image5, image6, image7, image8, image9 } from './index.jsx';
+
+// function Projects() {
+//   const [ currentImageIndex, setCurrentImageIndex ] = useState(0)
+
+//   const projects = {
+//     aerobites: [image1, image2, image3],
+//     rancidtomatillos: [image4, image5, image6],
+//     ventures: [image7, image8, image9]
+//   }
+
+//   useEffect(() => {
+//     const aerobitesIntervalId = startInterval(projects.aerobites);
+//     const rancidtomatillosIntervalId = startInterval(projects.rancidtomatillos);
+//     const venturesIntervalId = startInterval(projects.ventures);
+
+//     return () => {
+//       clearInterval(aerobitesIntervalId);
+//       clearInterval(rancidtomatillosIntervalId);
+//       clearInterval(venturesIntervalId);
+//     };
+//   }, [projects]);
+
+//   function startInterval(imageArray) {
+//     return setInterval(() => {
+//       setCurrentImageIndex((prevIndex) => (prevIndex === imageArray.length - 1 ? 0 : prevIndex + 1));
+//     }, 3000);
+//   }
+ 
+//   // useEffect(() => {
+//   //   const projectKeys = Object.keys(projects);
+
+//   //   const intervalIds = projectKeys.map((projectKeyName) => {
+//   //     const intervalId = setInterval(() => {
+//   //       setCurrentImageIndex((prevIndex) => (prevIndex === projects[projectKeyName].length - 1 ? 0 : prevIndex + 1));
+//   //     }, 3000);
+
+//   //     // Return an object with projectKeyName and intervalId
+//   //     return { projectKeyName, intervalId };
+//   //   });
+
+//   //   return () => {
+//   //     // Clear all intervalIds when the component unmounts
+//   //     intervalIds.forEach(({ intervalId }) => clearInterval(intervalId));
+//   //   };
+//   // }, [projects]);
+
+//   // useEffect(() => {
+//   //  Object.keys(projects).forEach((projectKeyName) => {
+//   //   handleImageArray(projects[projectKeyName])
+//   //  })
+//   //  return () => {
+//   //   Object.keys(projects).forEach((projectKeyName) => {
+//   //     clearInterval(projects[projectKeyName].intervalId)
+//   //   })
+//   //  }
+//   // }, [projects])
+//   // //clearInterval() function is a built-in JavaScript function that clears a timer set with the setInterval() function. It stops the interval specified by the interval ID,
+
+//   // function handleImageArray(imageArray) {
+//   //   const intervalId = setInterval(() => {
+//   //     setCurrentImageIndex((prevIndex) => (prevIndex === imageArray.length - 1) ? 0: prevIndex + 1)
+//   //   }, 3000)
+//   //   //add another key value to the imageArray so we can use dot notation
+//   //   imageArray.intervalId = intervalId
+//   // }
+
+//   function displayImageArrays(imageArray) {
+//     const displayImages = imageArray.map((image,index) => {
+//       return (
+//         <li key={index} style={{display: index === currentImageIndex ? 'block' : 'none'}}
+//         >
+//           <img className='image-size' src={image}
+//           alt={`${imageArray} application`}
+//           ></img>
+//         </li>
+//       )
+//     })
+//     return displayImages
+//   }
+  
+//   return (
+//     <div>
+//       <h2>Projects</h2>
+//       <section className="projects-container">
+//         {Object.keys(projects).map((projectKeyName) => {
+//           return (
+//             <section key={projectKeyName} className={`${projectKeyName}-project`}>{displayImageArrays(projects[projectKeyName])}</section>
+//           )
+//         })}
+//       </section>
+//     </div>
+//   )
+// }
+
+// export default Projects

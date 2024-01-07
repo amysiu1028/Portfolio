@@ -1,18 +1,14 @@
-import '../../../index.css'
+import '../../index.css'
 
 function Header() {
   return (
-    <div>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <section className='header'>
+        <header className='header-nav-links'>
+          <a href="#projects">Projects</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
         </header>
-    </div>
+    </section>
   )
 }
 
