@@ -85,3 +85,24 @@ button:focus-visible {
   display: flex;
   justify-content: space-around;
 }
+
+.dark-mode .moon-sun::before {
+  content: '🌙'; 
+  color: #D3D3D3; 
+}
+
+.light-mode .moon-sun::before {
+  content: '☀️'; 
+  color: #3C3C3C; 
+}
+
+.moon-sun-toggle {
+  font-size: 1.5em; 
+  cursor: pointer; 
+}
+
+.intro-toggle-container {
+  display:flex;
+  justify-content: center;
+  align-items: baseline;
+}
