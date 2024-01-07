@@ -54,7 +54,7 @@ function Projects() {
               <p>GitHub Repo</p>
               <img className='icon' src={NavigateIcon} alt='Resume icon image'></img>
               </a>
-              <a class='prof-link-design' rel='noopener noreferrer' href='https://aerobites-ioh3ctq6t-amy-sius-projects.vercel.app/' target='_blank'>
+              <a class='prof-link-design' rel='noopener noreferrer' href='https://aerobites-app.vercel.app/' target='_blank'>
               <p>Deployed Site</p>
               <img className='icon' src={NavigateIcon} alt='Resume icon image'></img>
               </a>
