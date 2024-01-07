@@ -1,6 +1,7 @@
 import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+import { ThemeProvider } from '../../contexts/ThemeContext.jsx';
 import React from 'react';
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
@@ -8,13 +9,13 @@ import Header from '../Header/Header.jsx'
 import Intro from '../Intro/Intro.jsx';
 import Projects from '../Projects/Projects.jsx'
 import Contact from '../Contact/Contact.jsx';
-import { ThemeProvider } from '../../contexts/ThemeContext.jsx';
+// import { useTheme } from '../../contexts/ThemeContext';
 
 function App() {
   // const [count, setCount] = useState(0)
-  return (
-    <ThemeProvider>
+  // const { isDarkMode, toggleTheme, theme } = useTheme();
 
+  return (
       <main>
         <Routes>
           <Route 
@@ -52,7 +53,6 @@ function App() {
           <Route path='/contact' element={<> <Contact/> </>} ></Route>
         </Routes>
       </main>
-    </ThemeProvider>
   )
 }
 

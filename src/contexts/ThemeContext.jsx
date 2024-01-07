@@ -5,7 +5,6 @@ import { createContext, useContext, useState } from 'react';
 //create context to manage theme globally across this app
 const ThemeContext = createContext();
 
-
 // useTheme function = custom hook created using the useContext hook. Allows you to access the current theme state and the toggleTheme function within your components.
 export const useTheme = () => {
   return useContext(ThemeContext);
