@@ -1,0 +1,25 @@
+/* .parallax-section {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+  }
+  
+  .parallax-bg {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-image: url('../../assets/profile/profile.png');
+    background-size: contain; 
+    background-position: right; 
+    z-index: -1; 
+    transform: translateZ(0);
+  }
+  
+  .parallax-content {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-2%, -50%);
+    text-align: center;
+    z-index: 1;
+  } */
