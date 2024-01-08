@@ -18,7 +18,7 @@ This project is a personal portfolio website. It serves as a showcase of my skil
 [Live Demo](https://portfolio-git-main-amy-sius-projects.vercel.app/)
 
 ## 🎥 Preview 
-[Preview Link](#)
+
 
 ### Prerequisites
 - Ensure you have Node.js and npm installed on your system.
