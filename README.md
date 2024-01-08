@@ -15,7 +15,8 @@
 This project is a personal portfolio website. It serves as a showcase of my skills and projects, featuring sections for projects, testimonials example section, and a contact form. The site is built with HTML, CSS, JavaScript, React, and React Router, focusing on responsive design and interactivity.
 
 ## Link
-[Live Demo](https://portfolio-git-main-amy-sius-projects.vercel.app/)
+[Live Demo](https://amysportfolio-git-main-amy-sius-projects.vercel.app/)
+[Live Demo Link if above doesn't work](https://portfolio-git-main-amy-sius-projects.vercel.app/)
 
 ## 🎥 Preview 
 
