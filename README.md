@@ -19,12 +19,10 @@ This project is a personal portfolio website. It serves as a showcase of my skil
 
 ## 🎥 Preview 
 
-
 ### Prerequisites
 - Ensure you have Node.js and npm installed on your system.
 - if you don't have node installed follow the following steps.
 <details>
-<summary><b>How to Download and Install Node.js</b></summary>
 
 ## 🔌 Project Setup
 1. **Clone the Repository:**
