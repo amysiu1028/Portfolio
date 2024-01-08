@@ -1,9 +1,6 @@
 <div align="center">
 # Personal Portfolio Website
 
-## 💭 Introduction
-This project is a personal portfolio website. It serves as a showcase of my skills and projects, featuring sections for projects, testimonials example section, and a contact form. The site is built with HTML, CSS, JavaScript, React, and React Router, focusing on responsive design and interactivity.
-
 ## 💾 Technologies Used
 ![HTML](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -13,6 +10,9 @@ This project is a personal portfolio website. It serves as a showcase of my skil
 ![npm](https://img.shields.io/badge/npm-CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 
 </div>
+
+## 💭 Introduction
+This project is a personal portfolio website. It serves as a showcase of my skills and projects, featuring sections for projects, testimonials example section, and a contact form. The site is built with HTML, CSS, JavaScript, React, and React Router, focusing on responsive design and interactivity.
 
 ## Link
 [Live Demo](https://portfolio-git-main-amy-sius-projects.vercel.app/)
