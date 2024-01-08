@@ -1,4 +1,3 @@
-import './Intro.css'
 import DarkModeToggle from '../DarkModeToggle/DarkModeToggle'
 import profile from '../../assets/profile/profile.png';
 
