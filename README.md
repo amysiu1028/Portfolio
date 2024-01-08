@@ -16,14 +16,13 @@ This project is a personal portfolio website. It serves as a showcase of my skil
 
 ## Link
 [Live Demo](https://amysportfolio-git-main-amy-sius-projects.vercel.app/)
-[Live Demo Link if above doesn't work](https://portfolio-git-main-amy-sius-projects.vercel.app/)
+[Live Demo Link if the link on left doesn't work](https://portfolio-git-main-amy-sius-projects.vercel.app/)
 
 ## 🎥 Preview 
 
 ### Prerequisites
 - Ensure you have Node.js and npm installed on your system.
 - if you don't have node installed follow the following steps.
-<details>
 
 ## 🔌 Project Setup
 1. **Clone the Repository:**
