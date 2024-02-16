@@ -121,25 +121,40 @@ button:focus-visible {
 }
 
 .image-size {
-  width: 330px; 
-  height: 250px; 
+  /* width: 330ppx; 
+  height: 250px;  */
+  width: 100%;
+  /* height: 500px; */
+  height: auto;
+  object-fit: cover
 }
 
 .projects-container {
   display: flex;
   justify-content: space-around;
+  margin: 0 20px; /* Adjust margins for consistent spacing */
+}
+
+.single-images-containe {
+  max-width: 30%;
+  margin: 0 20px; 
 }
 
 .single-description-container {
   max-width: 30%;
-  margin: 0 60px;
+  margin: 0 20px; 
 }
+
 
 .single-project-container {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  margin: 0px 30px;
+  /* flex: 1; */
+  /* margin: 0px 30px; */
+}
+
+.single-imageslider {
+  max-width: 100%;
 }
 
 .dark-mode .moon-sun::before {
